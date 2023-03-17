@@ -1,7 +1,120 @@
-// @import "fonts";
-@import "header"; 
+//<import>=======================================>
+@import "null";
+//</import>=======================================>
 
+
+
+//<Шрифт по умолчанию>===========================>
+$fontFamaly: "Roboto, sans-serif";
+$fontSize: "16px";
+//</Шрифт по умолчанию>===========================>
+
+$blackColor: #333333;
+
+//<Основная сетка>=======================================>
 body {
-    background-color: rgb(143, 69, 69);
-    color: rgb(31, 17, 17);
+    font-family: $fontFamaly;
+    font-size: $fontSize;
+    background-color: $blackColor;
+    color: #fff;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+//</Основная сетка>=======================================>
+
+
+
+//<Основной блок>=======================================>
+.page {
+    flex: 1 1 auto;
+}
+
+
+
+
+
+
+
+.form {
+    width: 800px;
+    margin: 0 auto;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__body {
+        padding: 20px 0;
+        display: flex;
+    }
+
+    &__input {
+        height: 30px;
+        width: 250px;
+        margin-right: 10px;
+        padding: 0 10px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 80px;
+        border-radius: 10px;
+
+    }
+}
+
+
+.repositories {
+    width: 600px;
+    margin: 0 auto;
+
+    &__body {
+        // display: flex;
+        // justify-content: center;
+        padding: 20px 0;
+        border-bottom: 1px solid rgb(154, 72, 236);
+    }
+
+    &__title {
+        font-size: 24px;
+    }
+
+    &__name {
+        font-size: 22px;
+        color: #fff;
+    }
+
+    &__owner {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+    }
+
+    &__img {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        border-radius: 100%;
+    }
+
+    &__login {
+        font-size: 18px;
+    }
 }
